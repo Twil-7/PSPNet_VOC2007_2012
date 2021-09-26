@@ -22,8 +22,21 @@ tf.image.resize(x, (K.int_shape(y)[1], K.int_shape(y)[2]))改成tf.image.resize_
 
 数据集下载：https://blog.csdn.net/Twilight737?spm=1018.2226.3001.5343&type=download
 
-3、demo文件夹：test_data的效果演示图，可以看出训练出来的非常不错，所有像素点分类精度接近91%。
+3、demo文件夹：test_data的效果演示图。
 
+4、download_weights.h5：迁移学习，网上下载backbone的部分权重。
+
+5、mobile_netv2.py：特征提取网络，PSPNet的backbone部分。
+
+6、psp_model.py：PSPNet整体结构。
+
+7、utils.py：重构的loss损失函数。
+
+8、Logs文件夹：记录每大轮下每个epoch训练好的权重文件。
+
+# 实验效果：
+
+VOC2007_2012数据集的语义分割效果比较理想，最佳权重下，所有像素点分类精度接近91%。
 
 Epoch 1/20
 
@@ -40,14 +53,3 @@ Epoch 3/20
 Epoch 4/20
 
 687/687 [==============================] - 2132s 3s/step - loss: 0.1562 - accuracy: 0.9322 - val_loss: 0.2114 - val_accuracy: 0.9083
-
-
-4、download_weights.h5：迁移学习，网上下载backbone的部分权重。
-
-5、mobile_netv2.py：特征提取网络，PSPNet的backbone部分。
-
-6、psp_model.py：PSPNet整体结构。
-
-7、utils.py：重构的loss损失函数。
-
-8、Logs文件夹：记录每大轮下每个epoch训练好的权重文件。
