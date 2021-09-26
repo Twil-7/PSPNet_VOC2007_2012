@@ -26,12 +26,19 @@ tf.image.resize(x, (K.int_shape(y)[1], K.int_shape(y)[2]))改成tf.image.resize_
 
 
 Epoch 1/20
+
 687/687 [==============================] - 1985s 3s/step - loss: 0.1634 - accuracy: 0.9302 - val_loss: 0.2126 - val_accuracy: 0.9077
+
 Epoch 2/20
+
 687/687 [==============================] - 1915s 3s/step - loss: 0.1589 - accuracy: 0.9309 - val_loss: 0.2122 - val_accuracy: 0.9079
+
 Epoch 3/20
+
 687/687 [==============================] - 2026s 3s/step - loss: 0.1585 - accuracy: 0.9309 - val_loss: 0.2100 - val_accuracy: 0.9088
+
 Epoch 4/20
+
 687/687 [==============================] - 2132s 3s/step - loss: 0.1562 - accuracy: 0.9322 - val_loss: 0.2114 - val_accuracy: 0.9083
 
 
